@@ -1,5 +1,6 @@
 package ru.sberbank.homework1;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,10 @@ import android.widget.Button;
 public class InfoActivity extends AppCompatActivity {
 
     Button button;
+
+    public static final Intent newIntent(Context context) {
+        return new Intent(context, InfoActivity.class);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
