@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">HomeWork1</string>
+    <string name="next">Next</string>
+    <string name="thirdactivity">ThirdActivity</string>
+    <string name="prev">Prev</string>
+    <string name="fourthactivity">FourthActivity</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="finish">Finish</string>
 </resources>

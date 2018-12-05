@@ -9,8 +9,8 @@ import android.widget.Button;
 
 public class DetailsActivity extends AppCompatActivity {
 
-    Button n;
-    Button p;
+    private Button nextButton;
+    private Button previousButton;
 
     public static final Intent newIntent(Context context) {
         return new Intent(context, DetailsActivity.class);
@@ -26,7 +26,7 @@ public class DetailsActivity extends AppCompatActivity {
 
     private void initListeners() {
         //впред
-        n.setOnClickListener(new View.OnClickListener() {
+        nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = InfoActivity.newIntent(getApplicationContext());
@@ -34,7 +34,7 @@ public class DetailsActivity extends AppCompatActivity {
             }
         });
         //назад
-        p.setOnClickListener(new View.OnClickListener() {
+        previousButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = MainActivity.newIntent(getApplicationContext());
@@ -46,8 +46,8 @@ public class DetailsActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        n = findViewById(R.id.detailsN);
-        p = findViewById(R.id.detailsP);
+        nextButton = findViewById(R.id.detailsN);
+        previousButton = findViewById(R.id.detailsP);
 
     }
 

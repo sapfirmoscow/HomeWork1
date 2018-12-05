@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button button;
+    private Button button;
 
     public static final Intent newIntent(Context context) {
         return new Intent(context, MainActivity.class);

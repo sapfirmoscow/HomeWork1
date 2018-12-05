@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class InfoActivity extends AppCompatActivity {
 
-    Button button;
+    private Button button;
 
     public static final Intent newIntent(Context context) {
         return new Intent(context, InfoActivity.class);
@@ -27,7 +27,7 @@ public class InfoActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = MainActivity.newIntent(getApplicationContext());
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
